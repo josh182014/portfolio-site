@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #737c8d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    flex-wrap: wrap;
+    border: 1px solid red;
+
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
