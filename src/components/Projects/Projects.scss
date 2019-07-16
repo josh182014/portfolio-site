@@ -1,0 +1,16 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    width: 100%;
+
+    .projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid green;
+        margin: 20px;
+        width: 100%;
+    }
+}

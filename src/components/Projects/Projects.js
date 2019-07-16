@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './Project';
+import './Projects.scss';
 
 const Projects = (props) => {
     if (props.projects) {
