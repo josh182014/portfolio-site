@@ -1,19 +1,35 @@
-.header {
+.navContainer { 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: #737c8d;
+  justify-content: center;
+
+  .header {
     width: 100%;
-    height: 100px;
-    background-color: #737c8d;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: white;
     flex-wrap: wrap;
-    border: 1px solid red;
+    justify-content: space-between;
+
+    h3 {
+      margin-left: 7%;
+    }
 
 
     .nav {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
+      width: 35%;
+      margin: 7%;
     }
   }
+}

@@ -3,7 +3,7 @@ import "./Navigation.scss";
 
 const Nav = () => {
     return (
-        <>
+        <div className="navContainer">
             <header className="header">
                 <h3>joshtimmons.dev</h3>
                 <div className='nav'>
@@ -12,7 +12,7 @@ const Nav = () => {
                     <div>Contact</div>
                 </div>
         </header>
-        </>
+        </div>
     );
 }
  
