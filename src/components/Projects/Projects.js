@@ -2,7 +2,6 @@ import React from 'react';
 import Project from './Project';
 
 const Projects = (props) => {
-    console.log(props.projects)
     if (props.projects) {
         return (
             <div className="projectsContainer">
