@@ -8,7 +8,6 @@ const Skills = (props) => {
             <h2>Skills</h2>
             <ul>
                 {skills.map(skill => (
-                    console.log(skill),
                     <li key={skill}>{skill}</li>
                 ))}
             </ul>

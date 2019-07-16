@@ -7,7 +7,7 @@ const Projects = (props) => {
         return (
             <div className="projectsContainer">
             {props.projects.map(project => (
-                <Project project={project} />
+                <Project key={project.name} project={project} />
                 ))}
             </div>
         );

@@ -7,7 +7,7 @@ const Project = (props) => {
             <p>Description: {props.project.description}</p>
             <div>Main Language: {props.project.mainLanguage}</div>
             <div>View Code: {props.project.github}</div>
-            {props.project.viewLive ? (<a target='_blank' href={props.project.viewLive}> View Live </a>) : (false)}
+            {props.project.viewLive ? (<a rel="noopener noreferrer" target='_blank' href={props.project.viewLive}> View Live </a>) : (false)}
         </div>
     )
 }
