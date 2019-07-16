@@ -12,5 +12,10 @@
         border: 1px solid green;
         margin: 20px;
         width: 100%;
+
+        img {
+            width: 150px;
+            align-self: flex-end;
+        }
     }
 }
