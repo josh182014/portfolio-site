@@ -2,15 +2,34 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid red;
     width: 100%;
 
     .projectContainer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        border: 1px solid green;
-        margin: 20px;
         width: 100%;
+
+        &:nth-child(2), &:nth-child(4) {
+            background-color: #747ca8;
+        }
+        
+        // .split {
+        //     background-image: -webkit-linear-gradient(86deg, #747ca8 45%, #2e3141 1%);
+        //     min-height: 100px;
+        // }
+        // .split:nth-child(7) {
+        //         background-image: -webkit-linear-gradient(93deg, #2e3141 35%, #747ca8 10%);
+            
+        // }
+
+        img {
+            width: 150px;
+            align-self: flex-end;
+
+            // &:nth-child(n+2) {
+                // align-self: flex-start;
+            // }
+        }
     }
 }
