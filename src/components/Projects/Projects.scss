@@ -18,8 +18,7 @@
         h3 {
             border-bottom: 2px solid darkgray;
             width: 80%;
-            padding: 20px;
-            padding-top: 0;
+            padding-bottom: 20px;
             align-self: center;
             margin: 30px 10%;
             // float: right;
@@ -30,6 +29,7 @@
             float: left;
             clear: left;
             margin-left: 7%;
+            text-align: right;
         }
 
         &:nth-child(2n) p {
@@ -37,6 +37,22 @@
             margin-right: 7%;
             float: right;
             clear: right;
+            text-align: left;
+        }
+
+        .projectDiv {
+            float: left;
+            width: 57%;
+            margin-left: 7%;
+            text-align: right;
+            color: white;
+        }
+
+        &:nth-child(2n) .projectDiv {
+            float: right;
+            text-align: left;
+            margin-left: 0;
+            margin-right: 7%;
         }
         
         .split {
@@ -64,6 +80,7 @@
 
         img {
             width: 23%;
+            float: right;
             align-self: flex-end;
             margin-right: 7%;
         }
@@ -72,6 +89,7 @@
             align-self: flex-start;
             margin-right: 0px;
             margin-left: 7%;
+            float: left;
         }
     }
 }
@@ -84,10 +102,12 @@
 
     ul {
         padding: 0;
+        width: 80%;
+        align-self: center;
 
         li {
             list-style-type: none;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid rgb(71, 71, 71);
             padding: 20px;
         }
     }
