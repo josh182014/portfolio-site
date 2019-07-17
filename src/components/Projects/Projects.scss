@@ -5,35 +5,91 @@
     width: 100%;
 
     .projectContainer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
         width: 100%;
+        overflow: hidden;
 
         &:nth-child(2), &:nth-child(4) {
             background-color: #747ca8;
         }
+
+        h3 {
+            border-bottom: 2px solid darkgray;
+            width: 80%;
+            padding: 20px;
+            padding-top: 0;
+            align-self: center;
+            margin: 30px 10%;
+            // float: right;
+        }
+
+        p {
+            width: 57%;
+            float: left;
+            clear: left;
+            margin-left: 7%;
+        }
+
+        &:nth-child(2n) p {
+            margin-left: 0;
+            margin-right: 7%;
+            float: right;
+            clear: right;
+        }
         
         .split {
-            background-image: -webkit-linear-gradient(86deg, #747ca8 45%, #2e3141 1%);
+            width: 100%;
             min-height: 100px;
+            display: block;
+            overflow: hidden;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23747ca8' /%3E%3C/svg%3E");
+            background-color: #2e3141;
+            transform: scaleX(-1);
+            
         }
 
-        &:nth-child(2) .split {
-            background-image: -webkit-linear-gradient(93deg, #2e3141 35%, #747ca8 10%);
+        &:nth-child(2) .split, &:nth-child(4) .split {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
+            background-color: #747ca8;
+            transform: scaleX(1);
         }
 
+        &:nth-last-child(2) .split {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
+            background-color: #747ca8;
+            // transform: scaleX(-1);
+        }
 
         img {
-            width: 150px;
+            width: 23%;
             align-self: flex-end;
-            margin-right: 4%;
+            margin-right: 7%;
         }
 
-        &:nth-child(2) img {
+        &:nth-child(2) img, &:nth-child(4) img {
             align-self: flex-start;
             margin-right: 0px;
-            margin-left: 4%;
+            margin-left: 7%;
         }
     }
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            border-bottom: 2px solid black;
+            padding: 20px;
+        }
+    }
+
 }

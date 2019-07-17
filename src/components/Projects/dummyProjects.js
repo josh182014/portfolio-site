@@ -4,7 +4,13 @@ const dummyProjects = [
     },
     {
         name: 'Test Project Number 2', github: 'github.com', mainLanguage: 'python', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', viewLive: 'http://netlify.com', img: '/assets/bleep.png'
-    }
+    },
+    {
+        name: 'Test Project Number 2', github: 'github.com', mainLanguage: 'python', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', viewLive: 'http://netlify.com', img: '/assets/bleep.png'
+    },
+    {
+        name: 'Test Project Number 2', github: 'github.com', mainLanguage: 'python', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', viewLive: 'http://netlify.com', img: '/assets/bleep.png'
+    },
 
 ]
  
