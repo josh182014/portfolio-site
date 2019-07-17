@@ -6,6 +6,8 @@
   height: 100px;
   background-color: #2a364d;
   justify-content: center;
+  position: fixed;
+  z-index: 1;
 
     .header {
         width: 100%;
@@ -38,11 +40,13 @@
             }
 
             .hamburger-nav {
+                z-index: 2;
                 cursor: pointer;
+                
                 .hamburger1, .hamburger2, .hamburger3 {
                     width: 35px;
                     height: 5px;
-                    background-color: black;
+                    background-color: rgb(231, 231, 231);
                     margin: 6px 0;
                     transition: 0.4s;
 
@@ -65,10 +69,12 @@
 }
 
 .new-nav {
+    // top: 100px;
     display: flex;
     background: rgba(42,54,77, 0.5);
     flex-wrap: wrap;
     width: 100%;
+    height: calc(100% - 100px); 
     height: 100%;
     margin: 0;
     position: fixed;
