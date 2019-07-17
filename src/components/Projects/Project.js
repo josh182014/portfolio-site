@@ -9,7 +9,7 @@ const Project = (props) => {
             <div>Main Language: {props.project.mainLanguage}</div>
             <div>View Code: {props.project.github}</div>
             {props.project.viewLive ? (<a rel="noopener noreferrer" target='_blank' href={props.project.viewLive}> View Live </a>) : (false)}
-            <div className='split' >hi</div>
+            <div className='split' >hi1</div>
         </div>
     )
 }
