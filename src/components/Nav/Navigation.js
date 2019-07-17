@@ -6,7 +6,7 @@ const handleClick = () => {
     document.querySelector('.hamburger1').classList.toggle("change1");
     document.querySelector('.hamburger2').classList.toggle("change2");
     document.querySelector('.hamburger3').classList.toggle("change3");
-    document.querySelector('.new-nav').classList.toggle('hidden-new-nav');
+    document.querySelector('.popup-nav').classList.toggle('hidden-popup-nav');
 
 }
 
@@ -16,18 +16,15 @@ const Nav = () => {
             <header className="header">
                 <h3>joshtimmons.dev</h3>
                 <div className='nav'>
-                    {/* <Link className='navLink' to="/">Home</Link>
-                    <Link className='navLink' to="/about">About</Link>
-                    <Link className='navLink' to="/contact">Contact</Link> */}
-                <nav onClick={handleClick} class='hamburger-nav hidden-hamburger-nav'>
+                    <nav onClick={handleClick} class='hamburger-nav hidden-hamburger-nav'>
                         <div class='hamburger hamburger1'></div>
                         <div class='hamburger hamburger2'></div>
                         <div class='hamburger hamburger3'></div>
-				    </nav>
+                    </nav>
                 </div>
         </header>
-            <div onClick={handleClick} class='new-nav hidden-new-nav'>
-                <nav class="new-nav-links">
+            <div onClick={handleClick} class='popup-nav hidden-popup-nav'>
+                <nav class="popup-nav-links">
                     <h2>Menu</h2>
                     <Link className='navLink' to="/">Home</Link>
                     <Link className='navLink' to="/about">About</Link>

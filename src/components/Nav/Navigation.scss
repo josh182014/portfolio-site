@@ -42,7 +42,7 @@
             .hamburger-nav {
                 z-index: 2;
                 cursor: pointer;
-                
+
                 .hamburger1, .hamburger2, .hamburger3 {
                     width: 35px;
                     height: 5px;
@@ -68,7 +68,7 @@
     }
 }
 
-.new-nav {
+.popup-nav {
     // top: 100px;
     display: flex;
     background: rgba(42,54,77, 0.5);
@@ -82,7 +82,7 @@
     overflow: hidden;
     justify-content: center;
 
-    .new-nav-links {
+    .popup-nav-links {
         background-color: #2a364d;
         align-self: center;
         opacity: 1;
@@ -102,6 +102,6 @@
     }
 }
 
-.hidden-new-nav {
+.hidden-popup-nav {
     display: none;
 }
