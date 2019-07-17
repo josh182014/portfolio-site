@@ -69,7 +69,8 @@
 }
 
 .popup-nav {
-    // top: 100px;
+    text-align: center;
+    color: white;
     display: flex;
     background: rgba(42,54,77, 0.5);
     flex-wrap: wrap;
@@ -78,7 +79,6 @@
     height: 100%;
     margin: 0;
     position: fixed;
-    z-index: 1;
     overflow: hidden;
     justify-content: center;
 
@@ -91,6 +91,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         margin: 30px;
+        position: relative;
 
         a {
             font-size: 1.9rem;
