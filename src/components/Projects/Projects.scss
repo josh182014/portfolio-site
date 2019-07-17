@@ -5,54 +5,66 @@
     width: 100%;
 
     .projectContainer {
-        // display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        // flex-direction: row;
         width: 100%;
         overflow: hidden;
+        // justify-content: center;
+        align-content: center;
+        align-items: center;
 
-        &:nth-child(2), &:nth-child(4) {
+
+        &:nth-child(2n) {
             background-color: #747ca8;
+            flex-direction: row-reverse;
         }
 
-        h3 {
-            border-bottom: 2px solid darkgray;
-            width: 80%;
-            padding-bottom: 20px;
-            align-self: center;
-            margin: 30px 10%;
-            // float: right;
-        }
-
-        p {
+        .projectTextContainer {
+            display: flex;
+            flex-wrap: wrap;
             width: 57%;
-            float: left;
-            clear: left;
-            margin-left: 7%;
-            text-align: right;
-        }
+            overflow: hidden;
+            // justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
 
-        &:nth-child(2n) p {
-            margin-left: 0;
-            margin-right: 7%;
-            float: right;
-            clear: right;
-            text-align: left;
-        }
+            h3 {
+                border-bottom: 2px solid darkgray;
+                width: 80%;
+                padding-bottom: 20px;
+                align-self: center;
+                margin: 30px 10%;
+                // float: right;
+            }
 
-        .projectDiv {
-            float: left;
-            width: 57%;
-            margin-left: 7%;
-            text-align: right;
-            color: white;
-        }
+            .projectDescription {
+                width: 57%;
+                align-self: flex-start;
+                margin-left: 7%;
+                text-align: right;
+            }
 
-        &:nth-child(2n) .projectDiv {
-            float: right;
-            text-align: left;
-            margin-left: 0;
-            margin-right: 7%;
+            &:nth-child(2n) .projectDescription {
+                margin-left: 0;
+                margin-right: 7%;
+                text-align: left;
+            }
+
+            .projectDiv {
+                width: 57%;
+                margin-left: 4%;
+                text-align: right;
+                color: white;
+                align-self: flex-start;
+            }
+
+            &:nth-child(2n) .projectDiv {
+                text-align: left;
+                margin-left: 0;
+                margin-right: 7%;
+            }
         }
         
         .split {
@@ -60,20 +72,21 @@
             min-height: 100px;
             display: block;
             overflow: hidden;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23747ca8' /%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%23747ca8' /%3E%3C/svg%3E");
             background-color: #2e3141;
             transform: scaleX(-1);
+            // transform: rotate(140deg);
             
         }
 
-        &:nth-child(2) .split, &:nth-child(4) .split {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
+        &:nth-child(2n) .split {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%232e3141' /%3E%3C/svg%3E");
             background-color: #747ca8;
             transform: scaleX(1);
         }
 
         &:nth-last-child(2) .split {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141' /%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%232e3141' /%3E%3C/svg%3E");
             background-color: #747ca8;
             // transform: scaleX(-1);
         }
@@ -85,7 +98,7 @@
             margin-right: 7%;
         }
 
-        &:nth-child(2) img, &:nth-child(4) img {
+        &:nth-child(2n) img {
             align-self: flex-start;
             margin-right: 0px;
             margin-left: 7%;
