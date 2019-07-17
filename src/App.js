@@ -12,8 +12,9 @@ function App() {
   })
 
   return (
+    <div>
+    <Nav />
     <div className="container">
-      <Nav />
       <Route exact path='/'
         render={props => (
           <Projects {...props}
@@ -35,6 +36,7 @@ function App() {
           />
         )}
       />
+    </div>
     </div>
   );
 }

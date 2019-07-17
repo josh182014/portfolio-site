@@ -7,6 +7,7 @@ const handleClick = () => {
     document.querySelector('.hamburger2').classList.toggle("change2");
     document.querySelector('.hamburger3').classList.toggle("change3");
     document.querySelector('.popup-nav').classList.toggle('hidden-popup-nav');
+    document.querySelector('.container').classList.toggle('container-blur');
 
 }
 
@@ -22,7 +23,7 @@ const Nav = () => {
                         <div class='hamburger hamburger3'></div>
                     </nav>
                 </div>
-        </header>
+            </header>
             <div onClick={handleClick} class='popup-nav hidden-popup-nav'>
                 <nav class="popup-nav-links">
                     <h2>Menu</h2>
