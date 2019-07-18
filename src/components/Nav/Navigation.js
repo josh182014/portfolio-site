@@ -32,16 +32,16 @@ const Nav = () => {
             <header className="header">
                 <h3>joshtimmons.dev</h3>
                 <div className='nav'>
-                    <nav onClick={handleClick} class='hamburger-nav hidden-hamburger-nav'>
-                        <div class='hamburger hamburger1'></div>
-                        <div class='hamburger hamburger2'></div>
-                        <div class='hamburger hamburger3'></div>
+                    <nav onClick={handleClick} className='hamburger-nav hidden-hamburger-nav'>
+                        <div className='hamburger hamburger1'></div>
+                        <div className='hamburger hamburger2'></div>
+                        <div className='hamburger hamburger3'></div>
                     </nav>
                 </div>
             </header>
             <div onClick={handleOutClick} className='popup-nav-overlay hidden-popup-nav'></div>
             <div className='popup-nav hidden-popup-nav' >
-                <nav class="popup-nav-links">
+                <nav className="popup-nav-links">
                     <h2>Menu</h2>
                     <Link onClick={handleOutClick} className='navLink' to="/">Home</Link>
                     <Link onClick={handleOutClick} className='navLink' to="/about">About</Link>

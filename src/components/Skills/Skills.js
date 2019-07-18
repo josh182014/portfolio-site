@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = (props) => {
 
-    const skills = ['JavaScript', 'React.js', 'Postgres', 'SQLite', 'Git' ]
+    const skills = ['JavaScript', 'React.js', 'Node.js', 'Express.js', 'Postgres', 'SQLite', 'Git' ]
     return (
         <div className='skillsContainer'>
             <h2>Top Skills I've Learned</h2>
