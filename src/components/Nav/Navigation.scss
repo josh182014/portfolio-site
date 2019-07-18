@@ -83,15 +83,20 @@
     justify-content: center;
 
     .popup-nav-links {
-        background-color: #2a364d;
+        height: 250px;
+        background-color: #4d6591;
         align-self: center;
         opacity: 1;
-        width: 30%;
+        width: 50%;
+        min-width: 200px;
+        max-width: 500px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         margin: 30px;
         position: relative;
+        top: -50px;
+        border-radius: 3%;
 
         a {
             font-size: 1.9rem;
