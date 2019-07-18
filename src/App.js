@@ -4,7 +4,6 @@ import './App.scss';
 import Nav from './components/Nav/Navigation';
 import Projects from './components/Projects/Projects';
 import dummyProjects from './components/Projects/dummyProjects'
-import BackgroundBlur from './assets/BackgroundBlur';
 
 function App() {
 
