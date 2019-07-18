@@ -67,20 +67,21 @@
         }
     }
 
-    input {
+    .searchInput {
         height: 30px;
-        width: 10px;
+        width: 60%;
         height: 40px;
         align-self: center;
         transition: width 0.2s linear;
         font-size: 16px;
         border-radius: 10px;
+        margin-bottom: 10px;
 
 
-        &:focus {
-            width: 60%;
-            outline: none;
-        }
+        // &:focus {
+        //     width: 60%;
+        //     outline: none;
+        // }
     }
 
     .fa-search {
@@ -120,10 +121,11 @@
         border-radius: 3%;
 
         a {
+            width: 30%;
+            align-self: center;
             font-size: 1.9rem;
             text-decoration: none;
             color: black;
-            justify-content: space-between;
             margin: 8px;
         }
     }
