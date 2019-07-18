@@ -4,6 +4,7 @@ import './App.scss';
 import Nav from './components/Nav/Navigation';
 import Projects from './components/Projects/Projects';
 import dummyProjects from './components/Projects/dummyProjects'
+import SearchPage from './components/Search/SearchPage';
 
 function App() {
 
@@ -32,6 +33,13 @@ function App() {
       <Route path='/contact'
         render={props => (
           <Projects {...props}
+          projects={state.projects}
+          />
+        )}
+      />
+      <Route path='/search'
+        render={props => (
+          <SearchPage {...props}
           projects={state.projects}
           />
         )}

@@ -5,7 +5,7 @@
   width: 100%;
   height: 100px;
   background-color: #2a364d;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   z-index: 1;
 
@@ -66,9 +66,70 @@
             }
         }
     }
+
+    input {
+        height: 30px;
+        width: 10px;
+        height: 40px;
+        align-self: center;
+        transition: width 0.2s linear;
+        font-size: 16px;
+        border-radius: 10px;
+
+
+        &:focus {
+            width: 60%;
+            outline: none;
+        }
+    }
+
+    .fa-search {
+        align-self: center;
+        transform: scale(0.8);
+        cursor: pointer;
+    }
+
 }
 
 .popup-nav {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 350px;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    overflow: hidden;
+    justify-content: center;
+
+    .popup-nav-links {
+        background-color: #4d6591;
+        align-self: center;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        border-radius: 3%;
+
+        a {
+            font-size: 1.9rem;
+            text-decoration: none;
+            color: black;
+            justify-content: space-between;
+            margin: 8px;
+        }
+    }
+}
+
+.popup-nav-overlay {
     text-align: center;
     color: white;
     display: flex;
@@ -81,31 +142,6 @@
     position: fixed;
     overflow: hidden;
     justify-content: center;
-
-    .popup-nav-links {
-        height: 250px;
-        background-color: #4d6591;
-        align-self: center;
-        opacity: 1;
-        width: 50%;
-        min-width: 200px;
-        max-width: 500px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 30px;
-        position: relative;
-        top: -50px;
-        border-radius: 3%;
-
-        a {
-            font-size: 1.9rem;
-            text-decoration: none;
-            color: black;
-            justify-content: space-between;
-            margin: 8px;
-        }
-    }
 }
 
 .hidden-popup-nav {
