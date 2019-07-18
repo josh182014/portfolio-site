@@ -13,6 +13,19 @@ const handleClick = () => {
 
 }
 
+const handleOutClick = () => {
+    document.querySelector('.hamburger1').classList.toggle("change1");
+    document.querySelector('.hamburger2').classList.toggle("change2");
+    document.querySelector('.hamburger3').classList.toggle("change3");
+    document.querySelector('.popup-nav').classList.toggle('hidden-popup-nav');
+    document.querySelector('.popup-nav-overlay').classList.toggle('hidden-popup-nav');
+    document.querySelector('.container').classList.toggle('container-blur');
+    document.querySelector(".fa-search").classList.remove('hidden')
+    document.querySelector(".searchInput").classList.add('hidden')
+    document.querySelector(".search-options").classList.add('hidden')
+}
+
+
 const Nav = () => {
     return (
         <div className="navContainer">
@@ -26,14 +39,14 @@ const Nav = () => {
                     </nav>
                 </div>
             </header>
-            <div onClick={handleClick} className='popup-nav-overlay hidden-popup-nav'></div>
+            <div onClick={handleOutClick} className='popup-nav-overlay hidden-popup-nav'></div>
             <div className='popup-nav hidden-popup-nav' >
                 <nav class="popup-nav-links">
                     <h2>Menu</h2>
+                    <Link onClick={handleOutClick} className='navLink' to="/">Home</Link>
+                    <Link onClick={handleOutClick} className='navLink' to="/about">About</Link>
+                    <Link onClick={handleOutClick} className='navLink' to="/contact">Contact</Link>
                     <SearchBar />
-                    <Link onClick={handleClick} className='navLink' to="/">Home</Link>
-                    <Link onClick={handleClick} className='navLink' to="/about">About</Link>
-                    <Link onClick={handleClick} className='navLink' to="/contact">Contact</Link>
                 </nav>
             </div>
         </div>
