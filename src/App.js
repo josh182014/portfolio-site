@@ -12,7 +12,7 @@ function App() {
   })
 
   return (
-    <div>
+    <div className='wrapper'>
     <Nav />
     <div className="container">
       <Route exact path='/'
