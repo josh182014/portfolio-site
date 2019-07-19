@@ -1,3 +1,5 @@
+@import '../../assets/master';
+
 .navContainer {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +17,8 @@
         display: flex;
         flex-direction: row;
         font-size: calc(10px + 2vmin);
-        color: rgb(231, 231, 231);
+        // color: rgb(231, 231, 231);
+        color: $whiteText;
         flex-wrap: wrap;
         justify-content: space-between;
 
@@ -36,7 +39,7 @@
 
             .navLink {
                 text-decoration: none;
-                color: white;
+                color: $whiteText;
             }
 
             .hamburger-nav {
@@ -46,7 +49,7 @@
                 .hamburger1, .hamburger2, .hamburger3 {
                     width: 35px;
                     height: 5px;
-                    background-color: rgb(231, 231, 231);
+                    background-color: $whiteText;
                     margin: 6px 0;
                     transition: 0.4s;
 
@@ -94,7 +97,7 @@
 
 .popup-nav {
     text-align: center;
-    color: white;
+    color: $whiteText;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -133,7 +136,7 @@
 
 .popup-nav-overlay {
     text-align: center;
-    color: white;
+    color: $whiteText;
     display: flex;
     background: rgba(42,54,77, 0.8);
     flex-wrap: wrap;

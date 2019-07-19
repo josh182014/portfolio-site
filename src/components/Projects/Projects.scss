@@ -1,3 +1,5 @@
+@import '../../assets//master';
+
 .projectsContainer {
     display: flex;
     flex-direction: row;
@@ -15,7 +17,7 @@
 
 
         &:nth-child(2n) {
-            background-color: #747ca8;
+            background-color: $lightBlue;
             flex-direction: row-reverse;
         }
 
@@ -78,7 +80,7 @@
             display: block;
             overflow: hidden;
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%23747ca8' /%3E%3C/svg%3E");
-            background-color: #2e3141;
+            background-color: $joshDarkBlue;
             transform: scaleX(-1);
             // transform: rotate(140deg);
             
@@ -86,13 +88,13 @@
 
         &:nth-child(2n) .split {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%232e3141' /%3E%3C/svg%3E");
-            background-color: #747ca8;
+            background-color: $lightBlue;
             transform: scaleX(1);
         }
 
         &:nth-last-child(2) .split {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%232e3141' /%3E%3C/svg%3E");
-            background-color: #747ca8;
+            background-color: $lightBlue;
             // transform: scaleX(-1);
         }
 
