@@ -73,13 +73,27 @@
         align-self: center;
         transition: width 0.2s linear;
         font-size: 16px;
-        border-radius: 10px;
+        border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
     .search-options {
         margin-bottom: 20px;
+
+        button {
+            background-color: $whiteText;
+            color: black;
+            border-radius: 2%;
+            width: 50%;
+            height: 30px;
+            margin: 10px 25%;
+            font-size: 14px;
+        }
+
+        input {
+            margin-top: 10px;
+        }
     }
 
     .fa-search {
