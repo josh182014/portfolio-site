@@ -17,36 +17,36 @@ function App() {
   return (
     <div className='wrapper'>
     <Nav />
-    <div className="container">
-      <Route exact path='/'
-        render={props => (
-          <Projects {...props}
-          projects={state.projects}
-          />
-        )}
-      />
-      <Route path='/about'
-        render={props => (
-          <About {...props}
-          projects={state.projects}
-          />
-        )}
-      />
-      <Route path='/contact'
-        render={props => (
-          <Contact {...props}
-          projects={state.projects}
-          />
-        )}
-      />
-      <Route path='/search'
-        render={props => (
-          <SearchPage {...props}
-          projects={state.projects}
-          />
-        )}
-      />
-    </div>
+      <div className="container">
+        <Route exact path='/'
+          render={props => (
+            <Projects {...props}
+            projects={state.projects}
+            />
+          )}
+        />
+        <Route path='/about'
+          render={props => (
+            <About {...props}
+            projects={state.projects}
+            />
+          )}
+        />
+        <Route path='/contact'
+          render={props => (
+            <Contact {...props}
+            projects={state.projects}
+            />
+          )}
+        />
+        <Route path='/search'
+          render={props => (
+            <SearchPage {...props}
+            projects={state.projects}
+            />
+          )}
+        />
+      </div>
     </div>
   );
 }
