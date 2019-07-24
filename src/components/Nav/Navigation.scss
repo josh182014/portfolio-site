@@ -11,6 +11,15 @@
   position: fixed;
   z-index: 1;
 
+  @media #{$tablet} {
+      border: 1px solid blue;
+  }
+
+
+  @media #{$mobile} {
+    border: 1px solid red;
+  }
+
     .header {
         height: 100px;
         width: 100%;
@@ -120,6 +129,14 @@
     overflow: hidden;
     justify-content: center;
     align-self: center;
+
+    @media #{$tablet} {
+        width: 80%;
+    }
+
+    @media #{$mobile} {
+        width: 90%;
+    }
 
     .popup-nav-links {
         background-color: #4d6591;
