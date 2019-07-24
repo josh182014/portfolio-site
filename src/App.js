@@ -10,7 +10,7 @@ import Contact from './components/Contact/Contact';
 
 function App() {
 
-  const [state, setState ] = useState({
+  const [state ] = useState({
     projects: dummyProjects
   })
 
