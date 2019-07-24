@@ -1,16 +1,18 @@
+@import './assets/_master.scss';
+
 .container {
   text-align: center;
-  background-color: #2e3141;
+  background-color: $joshDarkBlue;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color: rgb(231, 231, 231);
+  color: $whiteText;
 }
 
-.container-blur {
-  filter: blur(2px);
-}
+// .container-blur {
+//   filter: blur(2px);
+// }
 
 
 .hidden {

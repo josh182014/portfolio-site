@@ -1,3 +1,5 @@
+@import '../../assets/master';
+
 .navContainer {
   display: flex;
   flex-wrap: wrap;
@@ -5,19 +7,21 @@
   width: 100%;
   height: 100px;
   background-color: #2a364d;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   z-index: 1;
 
     .header {
+        height: 100px;
         width: 100%;
         max-width: 1200px;
         display: flex;
         flex-direction: row;
         font-size: calc(10px + 2vmin);
-        color: rgb(231, 231, 231);
+        color: $whiteText;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: center;
 
         h3 {
         margin-left: 7%;
@@ -34,11 +38,6 @@
         margin-right: 7%;
         align-self: center;
 
-            .navLink {
-                text-decoration: none;
-                color: white;
-            }
-
             .hamburger-nav {
                 z-index: 2;
                 cursor: pointer;
@@ -46,7 +45,7 @@
                 .hamburger1, .hamburger2, .hamburger3 {
                     width: 35px;
                     height: 5px;
-                    background-color: rgb(231, 231, 231);
+                    background-color: $whiteText;
                     margin: 6px 0;
                     transition: 0.4s;
 
@@ -76,37 +75,37 @@
         font-size: 16px;
         border-radius: 10px;
         margin-bottom: 10px;
+        margin-top: 10px;
+    }
 
-
-        // &:focus {
-        //     width: 60%;
-        //     outline: none;
-        // }
+    .search-options {
+        margin-bottom: 20px;
     }
 
     .fa-search {
         align-self: center;
         transform: scale(0.8);
         cursor: pointer;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
 }
 
 .popup-nav {
     text-align: center;
-    color: white;
+    color: $whiteText;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    height: 350px;
     min-width: 200px;
     max-width: 500px;
     margin: 0;
     position: fixed;
     top: 20%;
-    left: 25%;
     overflow: hidden;
     justify-content: center;
+    align-self: center;
 
     .popup-nav-links {
         background-color: #4d6591;
@@ -125,15 +124,22 @@
             align-self: center;
             font-size: 1.9rem;
             text-decoration: none;
-            color: black;
+            color: $whiteText;
             margin: 8px;
+        }
+
+        .border-line {
+            align-self: center;
+            width: 90%;
+            border-top: 2px solid $whiteText;
+            margin-bottom: 10px;
         }
     }
 }
 
 .popup-nav-overlay {
     text-align: center;
-    color: white;
+    color: $whiteText;
     display: flex;
     background: rgba(42,54,77, 0.8);
     flex-wrap: wrap;
