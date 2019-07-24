@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom';
 import "./Navigation.scss";
 import SearchBar from './Search';
@@ -26,11 +27,17 @@ const handleOutClick = () => {
 }
 
 
-const Nav = () => {
+
+const Nav = (props) => {
+
+    const titleClick = () => {
+        props.history.push('/')
+    }
+
     return (
         <div className="navContainer">
             <header className="header">
-                <h3>joshtimmons.dev</h3>
+                <h3 onClick={titleClick} className='title'>joshtimmons.dev</h3>
                 <div className='nav'>
                     <nav onClick={handleClick} className='hamburger-nav hidden-hamburger-nav'>
                         <div className='hamburger hamburger1'></div>
@@ -55,4 +62,4 @@ const Nav = () => {
     );
 }
  
-export default Nav;
+export default withRouter(Nav);
