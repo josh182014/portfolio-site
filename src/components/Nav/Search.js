@@ -75,7 +75,7 @@ const SearchBar = (props) => {
                         value='query'
                         required
                     />Query
-                                    
+                    <button className='search-submit' type='submit'>Search</button>            
                 </div>
             </form>
         </>
