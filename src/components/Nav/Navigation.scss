@@ -121,6 +121,14 @@
     justify-content: center;
     align-self: center;
 
+    @media #{$tablet} {
+        width: 80%;
+    }
+
+    @media #{$mobile} {
+        width: 90%;
+    }
+
     .popup-nav-links {
         background-color: #4d6591;
         align-self: center;
