@@ -49,6 +49,10 @@
                 width: 100%;
                 margin: 5px 7% 10px 7%;
                 text-align: right;
+
+                @media #{$mobile} {
+                    text-align: left;
+                }
             }
 
             .projectDiv {
