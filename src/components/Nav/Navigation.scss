@@ -38,11 +38,6 @@
         margin-right: 7%;
         align-self: center;
 
-            .navLink {
-                text-decoration: none;
-                color: $whiteText;
-            }
-
             .hamburger-nav {
                 z-index: 2;
                 cursor: pointer;
@@ -80,18 +75,19 @@
         font-size: 16px;
         border-radius: 10px;
         margin-bottom: 10px;
+        margin-top: 10px;
+    }
 
-
-        // &:focus {
-        //     width: 60%;
-        //     outline: none;
-        // }
+    .search-options {
+        margin-bottom: 20px;
     }
 
     .fa-search {
         align-self: center;
         transform: scale(0.8);
         cursor: pointer;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
 }
@@ -102,7 +98,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    height: 350px;
     min-width: 200px;
     max-width: 500px;
     margin: 0;
@@ -129,8 +124,15 @@
             align-self: center;
             font-size: 1.9rem;
             text-decoration: none;
-            color: black;
+            color: $whiteText;
             margin: 8px;
+        }
+
+        .border-line {
+            align-self: center;
+            width: 90%;
+            border-top: 2px solid $whiteText;
+            margin-bottom: 10px;
         }
     }
 }

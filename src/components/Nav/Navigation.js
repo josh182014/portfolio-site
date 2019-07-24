@@ -43,9 +43,11 @@ const Nav = () => {
             <div className='popup-nav hidden-popup-nav' >
                 <nav className="popup-nav-links">
                     <h2>Menu</h2>
+                    <span className='border-line'></span>
                     <Link onClick={handleOutClick} className='navLink' to="/">Home</Link>
                     <Link onClick={handleOutClick} className='navLink' to="/about">About</Link>
                     <Link onClick={handleOutClick} className='navLink' to="/contact">Contact</Link>
+                    <span className='border-line'></span>
                     <SearchBar />
                 </nav>
             </div>
