@@ -5,6 +5,8 @@ import Nav from './components/Nav/Navigation';
 import Projects from './components/Projects/Projects';
 import dummyProjects from './components/Projects/dummyProjects'
 import SearchPage from './components/Search/SearchPage';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
@@ -25,14 +27,14 @@ function App() {
       />
       <Route path='/about'
         render={props => (
-          <Projects {...props}
+          <About {...props}
           projects={state.projects}
           />
         )}
       />
       <Route path='/contact'
         render={props => (
-          <Projects {...props}
+          <Contact {...props}
           projects={state.projects}
           />
         )}
