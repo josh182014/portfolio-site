@@ -11,15 +11,6 @@
   position: fixed;
   z-index: 1;
 
-  @media #{$tablet} {
-      border: 1px solid blue;
-  }
-
-
-  @media #{$mobile} {
-    border: 1px solid red;
-  }
-
     .header {
         height: 100px;
         width: 100%;
