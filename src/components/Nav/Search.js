@@ -21,14 +21,6 @@ const SearchBar = (props) => {
         document.querySelector(".searchInput").focus();
     }
 
-    const searchBlur = () => {
-            document.querySelector(".fa-search").classList.toggle('hidden')
-            document.querySelector(".searchInput").classList.toggle('hidden')
-        document.querySelector(".search-options").classList.toggle('hidden')
-
-
-    }
-
     const typeClick = (e) => {
         setSearchState({
             ...searchState,
@@ -75,7 +67,7 @@ const SearchBar = (props) => {
                         value='query'
                         required
                     />Query
-                                    
+                    <button className='search-submit' type='submit'>Search</button>            
                 </div>
             </form>
         </>

@@ -1,0 +1,64 @@
+@import '../../assets/master';
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 100px auto;
+
+    h1 {
+        width: 90%;
+    }
+
+    img {
+        width: 17.5%;
+        align-self: flex-start;
+        align-self: center;
+        margin: 20px;
+        margin-left: 2.5%;
+
+        @media #{$tablet} {
+            margin: 20px;
+            width: 50%;
+        }
+
+        @media #{$mobile} {
+            margin: 20px;
+            width: 90%;
+        }
+    }
+
+    .about-paragraph {
+        text-align: left;
+        width: 70%;
+        align-self: center;
+        margin: 20px;
+
+        @media #{$tablet} {
+            width: 90%;
+        }
+
+        @media #{$mobile} {
+            width: 90%;
+        }
+    }
+
+    .divider {
+        width: 90%;
+        border-top: 2px solid darkgray;
+    }
+
+    .bio {
+        text-align: left;
+        width: 90%;
+
+    }
+
+    h2 {
+        width: 90%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+}
