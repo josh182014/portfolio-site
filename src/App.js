@@ -7,6 +7,7 @@ import dummyProjects from './components/Projects/dummyProjects'
 import SearchPage from './components/Search/SearchPage';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
           )}
         />
       </div>
+      <Footer />
     </div>
   );
 }

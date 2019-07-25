@@ -1,5 +1,45 @@
 @import '../../assets/master';
 
 .about-container {
-    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 100px auto;
+    // flex-direction: column;
+
+    h1 {
+        width: 90%;
+    }
+
+    img {
+        width: 20%;
+        align-self: flex-start;
+        align-self: center;
+        margin: 20px;
+
+        @media #{$tablet} {
+            width: 50%;
+        }
+
+        @media #{$mobile} {
+            width: 90%;
+        }
+    }
+
+    .about-paragraph {
+        text-align: left;
+        width: 70%;
+        align-self: center;
+        margin: 20px;
+
+        @media #{$tablet} {
+            width: 90%;
+        }
+
+        @media #{$mobile} {
+            width: 90%;
+        }
+    }
 }
