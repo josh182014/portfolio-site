@@ -104,8 +104,9 @@
 
         .projectImage {
             width: 23%;
-            margin: 20px;
-            margin-top: 45px;
+            margin: 45px 7% 20px 20px;
+            // margin: 20px;
+            // margin-top: 45px;
             max-width: 300px;
                 
             @media #{$mobile} {
@@ -124,6 +125,9 @@
                 align-self: center;
                 float: left;
             }
+        }
+        &:nth-child(2n) .projectImage {
+            margin: 45px 20px 20px 7%;
         }
     }
 }
