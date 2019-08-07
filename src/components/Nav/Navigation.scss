@@ -6,11 +6,12 @@
   flex-direction: row;
   width: 100%;
   height: $headerHeight;
-  background-color: #212944f3;
-  background-color: #29394bef;
+  background-color: #29394bb7;
   justify-content: center;
   position: fixed;
-  z-index: 1;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.74), 0 6px 20px 0 rgba(0, 0, 0, 0.151);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
 
     .header {
         height: $headerHeight;
@@ -24,6 +25,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+        
 
         .title {
             cursor: pointer;
@@ -184,4 +186,10 @@
 
 .hidden-popup-nav {
     display: none;
+}
+
+@-moz-document url-prefix() {
+    .navContainer {
+        background-color: #29394bef;
+    }
 }

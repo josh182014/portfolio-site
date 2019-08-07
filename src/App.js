@@ -13,7 +13,6 @@ function App() {
 
   const [state ] = useState({
     projects: dummyProjects,
-    scrollHeight: '',
   })
 
   return (
@@ -50,7 +49,7 @@ function App() {
         />
       </div>
       <Footer />
-    </div>
+      </div>
   );
 }
 
