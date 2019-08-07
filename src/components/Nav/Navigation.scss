@@ -187,3 +187,9 @@
 .hidden-popup-nav {
     display: none;
 }
+
+@-moz-document url-prefix() {
+    .navContainer {
+        background-color: #29394bef;
+    }
+}
