@@ -2,10 +2,15 @@
 $whiteText: rgb(238, 238, 238);
 
 //background colors
-$joshDarkBlue: #171b2e;
+$darkBlue: #171b2e;
 // $joshDarkBlue: #2e3141;
 $lightBlue: #747ca8;
+$skyBlue: #3e7289;
+$altBlue: #1c273a;
 
 //media queries
 $tablet: "(max-width: 800px)";
-$mobile: "(max-width: 500px)";
+$mobile: "(max-width: 550px)";
+
+//header size
+$headerHeight: 75px;

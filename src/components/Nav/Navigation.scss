@@ -5,14 +5,16 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  height: 100px;
-  background-color: #1c273a;
+  height: $headerHeight;
+  background-color: #212944f3;
+  background-color: #29394bef;
   justify-content: center;
   position: fixed;
   z-index: 1;
 
     .header {
-        height: 100px;
+        height: $headerHeight;
+        overflow: hidden;
         width: 100%;
         max-width: 1200px;
         display: flex;
@@ -48,8 +50,8 @@
                 cursor: pointer;
 
                 .hamburger1, .hamburger2, .hamburger3 {
-                    width: 35px;
-                    height: 5px;
+                    width: 28px;
+                    height: 3px;
                     background-color: $whiteText;
                     margin: 6px 0;
                     transition: 0.4s;
@@ -57,15 +59,15 @@
                 }
 
                 .change1 {
-                    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-                    transform: rotate(-45deg) translate(-9px, 6px);
+                    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+                    transform: rotate(-45deg) translate(-6px, 6px);
                 }
 
                 .change2 {opacity: 0;}
 
                 .change3 {
-                    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-                    transform: rotate(45deg) translate(-8px, -8px);
+                    -webkit-transform: rotate(45deg) translate(-6px, -7px);
+                    transform: rotate(45deg) translate(-6px, -7px);
                 }
             }
         }
@@ -136,6 +138,7 @@
 
     .popup-nav-links {
         background-color: #4d6591;
+        background-image: linear-gradient(20deg, #607cb1, #3f66ad);
         align-self: center;
         opacity: 1;
         width: 100%;

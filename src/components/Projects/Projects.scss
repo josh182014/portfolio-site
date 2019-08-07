@@ -5,7 +5,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 100px;
+    margin-top: $headerHeight;
+    padding-bottom: 20px;
 
     .projectContainer {
         display: flex;
@@ -14,10 +15,12 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
 
 
         &:nth-child(2n) {
-            background-color: $lightBlue;
             flex-direction: row-reverse;
         }
 
@@ -29,6 +32,7 @@
             align-content: center;
             align-items: center;
             margin-right: 50px;
+            margin-left: 4%;
             max-width: 700px;
 
             @media #{$mobile} {
@@ -64,8 +68,8 @@
         }
 
         &:nth-child(2n) .projectTextContainer {
-            margin-right: 0;
             margin-left: 50px;
+            margin-right: 4%;
 
             @media #{$mobile} {
                 width: 90%;
@@ -84,7 +88,7 @@
             display: block;
             overflow: hidden;
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 200,0 100,200' style='fill:%23747ca8' /%3E%3C/svg%3E");
-            background-color: $joshDarkBlue;
+            background-color: $darkBlue;
             transform: scaleX(-1);
             // transform: rotate(140deg);
             
@@ -104,7 +108,7 @@
 
         .projectImage {
             width: 23%;
-            margin: 45px 7% 20px 20px;
+            margin: 45px 5% 20px 20px;
             // margin: 20px;
             // margin-top: 45px;
             max-width: 300px;
@@ -127,7 +131,7 @@
             }
         }
         &:nth-child(2n) .projectImage {
-            margin: 45px 20px 20px 7%;
+            margin: 45px 20px 20px 5%;
         }
     }
 }
