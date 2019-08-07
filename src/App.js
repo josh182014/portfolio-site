@@ -12,7 +12,8 @@ import Footer from './components/Footer/Footer';
 function App() {
 
   const [state ] = useState({
-    projects: dummyProjects
+    projects: dummyProjects,
+    scrollHeight: '',
   })
 
   return (

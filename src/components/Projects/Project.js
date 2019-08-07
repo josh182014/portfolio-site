@@ -11,7 +11,7 @@ const Project = (props) => {
                 {props.project.viewLive ? (<a className='projectDiv projectLiveLink' rel="noopener noreferrer" target='_blank' href={props.project.viewLive}> View Live </a>) : (false)}
                 </div>
             <div className='projectImage'><img alt='' src={props.project.img} /></div>
-            <div className='split' ></div>
+            {/* <div className='split' ></div> */}
         </div>
     )
 }
