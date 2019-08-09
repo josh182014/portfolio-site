@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import "./Navigation.scss";
 import SearchBar from './Search';
 
@@ -30,22 +31,14 @@ const Nav = (props) => {
 
     const handleForm = (e) => {
         e.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...form })
-        })
+        axios
+        .post('https://hooks.zapier.com/hooks/catch/2231602/obh6ysb/', form)
         .then(res => {
-            setForm({
-                name: '',
-                email: '',
-                phone: '',
-                comment: '',
-            })
-            setFormSubmitted(true)
-            console.log('success')
+            console.log(res)
         })
-        .catch(error => console.log(error));
+        .catch(err => {
+            console.log(err)
+        })
     }
 
     const handleClick = () => {
