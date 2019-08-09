@@ -118,7 +118,7 @@
 .popup-nav {
     text-align: center;
     color: $whiteText;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     width: 50%;
     min-width: 200px;
@@ -126,10 +126,16 @@
     margin: 0;
     position: fixed;
     top: 20%;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-y: scroll;
     justify-content: center;
     align-self: center;
     height: 320px;
+    max-height: 80%;
+    flex-grow: 1;
+    border-radius: 10px;
+    // transition: opacity 1s;
+
 
     @media #{$tablet} {
         width: 80%;
@@ -149,10 +155,11 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        flex-grow: 3;
+        justify-content: flex-start;
         position: relative;
-        border-radius: 10px;
-        // height: 310px;
-        // overflow: visible;
+        overflow: scroll;
+        flex: 1;
 
         a {
             width: 30%;
@@ -170,7 +177,8 @@
             margin-bottom: 10px;
         }
         .navLink {
-            width: 30%;
+            // border: 1px solid red;
+            // width: 100%;
             align-self: center;
             font-size: 1.9rem;
             text-decoration: none;
@@ -194,6 +202,7 @@
     position: fixed;
     overflow: hidden;
     justify-content: center;
+    // transition: opacity 1s;
 }
 
 .popup-contact-nav {
@@ -293,7 +302,7 @@
     }
 }
 .search-transition {
-    height: 460px;
+    height: auto;
 }
 
 .contact-transition {
@@ -304,15 +313,20 @@
 }
 
 .hidden-popup-nav {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
+
+// .nav-transition {
+//     transition: opacity 0.8s, visibility 0.8s,
+// }
 .hidden-popup-contact-nav {
     opacity: 0;
     visibility: hidden;
 }
 
 .test-popup {
-    transition: height 1s, top 1s, opacity 0.3s ease-out 0.8s, visibility 0s 1.5s;
+    transition: height 1s, top 1s, opacity 0.5s ease-in 0.7s, visibility 0s 1.5s;
     opacity: 0;
     visibility: hidden;
 }
