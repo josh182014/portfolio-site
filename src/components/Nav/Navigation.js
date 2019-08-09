@@ -42,7 +42,6 @@ const Nav = (props) => {
                 comment: '',
             })
             setFormSubmitted(true)
-            console.log('success')
         })
         .catch(error => console.log(error));
         e.preventDefault();
@@ -72,9 +71,8 @@ const Nav = (props) => {
             document.querySelector('.popup-contact-nav').classList.remove("contact-transition")
             document.querySelector(".popup-nav").classList.remove('search-transition')
             document.querySelector(".popup-contact-nav").classList.remove('search-transition')
-
+            setFormSubmitted(false)
         }
-    
     }
         
     const handleContactClick = () => {
