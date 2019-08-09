@@ -29,7 +29,6 @@ const Nav = (props) => {
     }
 
     const handleForm = (e) => {
-        e.preventDefault();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -46,6 +45,7 @@ const Nav = (props) => {
             console.log('success')
         })
         .catch(error => console.log(error));
+        e.preventDefault();
     }
 
     const handleClick = () => {
