@@ -7,8 +7,8 @@ const Project = (props) => {
                 <h3>{props.project.name}</h3>
                 <div className='projectDescription'>{props.project.description}</div>
                 {/* <div className='projectDiv'>Main Language: {props.project.mainLanguage}</div> */}
-                <a className='projectDiv projectGitLink' rel="noopener noreferrer" target='_blank' href={props.project.github}>View Code</a>
-                {props.project.viewLive ? (<a className='projectDiv projectLiveLink' rel="noopener noreferrer" target='_blank' href={props.project.viewLive}> View Live </a>) : (false)}
+                <a rel="noopener noreferrer" target='_blank' href={props.project.github} className='projectDiv'><i class="fas fa-code"></i><span className='projectLink projectGitLink'>View Code</span></a>
+                {props.project.viewLive ? (<a rel="noopener noreferrer" target='_blank' href={props.project.viewLive} className='projectDiv'><i class="fas fa-desktop"></i><span className='projectLink projectLiveLink'> View Live </span></a>) : (false)}
                 </div>
             <div className='projectImage'><img alt='' src={props.project.img} /></div>
             {/* <div className='split' ></div> */}

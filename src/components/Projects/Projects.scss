@@ -62,8 +62,18 @@
             .projectDiv {
                 margin-top: 10px;
                 margin-bottom: 10px;
+                cursor: pointer;
                 color: white;
-                text-align: right;
+                text-decoration: none;
+
+                span {
+                    margin-left: 7px;
+                }
+
+                .projectLink {
+                    color: white;
+                    text-align: right;
+                }
             }
         }
 
