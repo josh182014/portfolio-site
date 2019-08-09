@@ -255,6 +255,29 @@
             }
         }
 
+        .resume {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            i {
+                align-self: center;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                align-self: center;
+                display: flex;
+
+                h4 {
+                    margin: 0;
+                    margin-left: 10px;
+                    align-self: center;
+                }
+            }
+        }
+
         h2 {
             width: 100%;
             margin-top: 0;
@@ -302,6 +325,9 @@
                 border: 1px solid rgb(112, 127, 148);
                 border-radius: 3px;
             }
+        }
+        .success {
+            margin: 30px;
         }
     }
 }
