@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import './App.scss';
 import Nav from './components/Nav/Navigation';
@@ -13,6 +13,10 @@ function App() {
   const [state] = useState({
     projects: dummyProjects,
   });
+
+  useEffect(() => {
+    console.log("Hiring? I'm currently looking for new opportunites. Download my resume here https://joshtimmons.dev/assets/resume.pdf :)");
+  }, []);
 
   return (
     <div className="wrapper">
