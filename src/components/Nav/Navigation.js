@@ -138,7 +138,7 @@ const Nav = (props) => {
                     : (
                     <>
                     <p>I'm currently looking for new opportunites. <a href='/assets/resume.pdf' download='josh-timmons-resume' target='_blank'>Here</a> is a link to download a pdf version of my resume. (Clicking the link will automatically download the pdf.) Please fill out this form and I will get back to you as fast as I can!</p>
-                    <form onSubmit={handleForm}>
+                    <form name='contact' onSubmit={handleForm}>
                         <div>Name</div>
                         <input
                             autoCapitalize="none"
