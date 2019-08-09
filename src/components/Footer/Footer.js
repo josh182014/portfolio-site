@@ -3,7 +3,7 @@ import './Footer.scss';
 
 const Footer = () => (
   <div className="footer-container">
-            Copyright © 2019 Josh Timmons All rights reserved.
+    Copyright © 2019 Josh Timmons All rights reserved.
   </div>
 );
 
