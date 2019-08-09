@@ -45,12 +45,14 @@
                 padding-bottom: 20px;
                 align-self: center;
                 margin: 30px 10%;
+                text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
             }
 
             .projectDescription {
                 width: 100%;
                 margin: 5px 7% 10px 7%;
                 text-align: right;
+                text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
 
                 @media #{$mobile} {
                     text-align: left;
