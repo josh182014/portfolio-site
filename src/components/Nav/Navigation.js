@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import "./Navigation.scss";
 import SearchBar from './Search';
 
@@ -31,14 +30,22 @@ const Nav = (props) => {
 
     const handleForm = (e) => {
         e.preventDefault();
-        axios
-        .post('https://hooks.zapier.com/hooks/catch/2231602/obh6ysb/', form)
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...form })
+        })
         .then(res => {
-            console.log(res)
+            setForm({
+                name: '',
+                email: '',
+                phone: '',
+                comment: '',
+            })
+            setFormSubmitted(true)
+            console.log('success')
         })
-        .catch(err => {
-            console.log(err)
-        })
+        .catch(error => console.log(error));
     }
 
     const handleClick = () => {
@@ -131,7 +138,7 @@ const Nav = (props) => {
                     : (
                     <>
                     <p>I'm currently looking for new opportunites. <a href='/assets/resume.pdf' download='josh-timmons-resume' target='_blank'>Here</a> is a link to download a pdf version of my resume. (Clicking the link will automatically download the pdf.) Please fill out this form and I will get back to you as fast as I can!</p>
-                    <form onSubmit={handleForm}>
+                    <form name='contact' onSubmit={handleForm}>
                         <div>Name</div>
                         <input
                             autoCapitalize="none"
