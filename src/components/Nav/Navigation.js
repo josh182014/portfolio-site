@@ -82,6 +82,14 @@ const Nav = (props) => {
         document.querySelector('.popup-contact-nav').classList.remove("test-popup")
         document.querySelector('.popup-contact-nav').classList.remove("hidden-popup-contact-nav")
         document.querySelector('.popup-contact-nav').classList.add("contact-transition")
+        document.querySelector(".popup-contact-nav").classList.remove('search-transition')
+        document.querySelector(".searchInput").classList.add('hidden')
+        document.querySelector(".search-options").classList.add('hidden')
+        document.querySelector(".fa-search").classList.remove('hidden')
+        document.querySelector(".popup-nav").classList.remove('search-transition')
+        document.querySelector(".popup-contact-nav").classList.remove('search-transition')
+
+
     }
     const handleContactBackClick = () => {
         // setContactOpen(false)
@@ -107,8 +115,8 @@ const Nav = (props) => {
                     </nav>
                 </div>
             </header>
-            <div onClick={handleClick} className='popup-nav-overlay hidden-popup-nav'></div>
-            <div className='popup-nav hidden-popup-nav' >
+            <div onClick={handleClick} className='popup-nav-overlay nav-transition hidden-popup-nav'></div>
+            <div id='popup-nav' className='popup-nav nav-transition hidden-popup-nav' >
                 <nav className="popup-nav-links">
                     <h2>Menu</h2>
                     <span className='border-line'></span>

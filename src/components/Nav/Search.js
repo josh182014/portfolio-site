@@ -16,11 +16,11 @@ const SearchBar = (props) => {
     const searchClick = () => {
         document.querySelector(".popup-nav").classList.add('search-transition')
         document.querySelector(".popup-contact-nav").classList.add('search-transition')
-            document.querySelector(".fa-search").classList.toggle('hidden')
-            document.querySelector(".search-options").classList.remove('hidden')
-            document.querySelector(".searchInput").classList.remove('hidden')
-            document.querySelector(".searchInput").focus();
-            document.querySelector(".searchInput").focus();
+        document.querySelector(".fa-search").classList.toggle('hidden')
+        document.querySelector(".search-options").classList.remove('hidden')
+        document.querySelector(".searchInput").classList.remove('hidden')
+        document.querySelector(".searchInput").focus();
+        document.querySelector(".searchInput").focus();
     }
 
     const typeClick = (e) => {
