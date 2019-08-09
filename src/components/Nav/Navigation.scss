@@ -118,7 +118,7 @@
 .popup-nav {
     text-align: center;
     color: $whiteText;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     width: 50%;
     min-width: 200px;
@@ -126,10 +126,14 @@
     margin: 0;
     position: fixed;
     top: 20%;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-y: scroll;
     justify-content: center;
     align-self: center;
     height: 320px;
+    max-height: 80%;
+    flex-grow: 1;
+    border-radius: 10px;
 
     @media #{$tablet} {
         width: 80%;
@@ -149,10 +153,11 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        flex-grow: 3;
+        justify-content: flex-start;
         position: relative;
-        border-radius: 10px;
-        // height: 310px;
-        // overflow: visible;
+        overflow: scroll;
+        flex: 1;
 
         a {
             width: 30%;
@@ -170,7 +175,8 @@
             margin-bottom: 10px;
         }
         .navLink {
-            width: 30%;
+            // border: 1px solid red;
+            // width: 100%;
             align-self: center;
             font-size: 1.9rem;
             text-decoration: none;
@@ -293,7 +299,7 @@
     }
 }
 .search-transition {
-    height: 460px;
+    height: auto;
 }
 
 .contact-transition {
