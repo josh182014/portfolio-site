@@ -27,6 +27,39 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <form name='contact' netlify netlify-honeypot="bot-field" hidden>
+      <div>Name</div>
+      <input
+          autoCapitalize="none"
+          type='text'
+          name='name'
+          placeholder='Name'
+          autoComplete='off'
+          onChange={handleChanges}
+          value={form.name}
+          required />
+      <div>Email</div>
+      <input
+          autoCapitalize="none"
+          type='text'
+          name='email'
+          placeholder='Email'
+          autoComplete='off'
+          onChange={handleChanges}
+          value={form.email}
+          required />
+      <div>Phone</div>
+      <input
+          autoCapitalize="none"
+          type='text'
+          name='phone'
+          placeholder='Phone Number'
+          autoComplete='off'
+          onChange={handleChanges}
+          value={form.phone}
+          required />
+          <textarea name='comment'></textarea>
+        </form>
     <div id="root"></div>
     <!--
       This HTML file is a template.
