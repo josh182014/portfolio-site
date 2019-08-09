@@ -170,7 +170,14 @@ const Nav = (props) => {
                             value={form.phone}
                             required />
                         <div>Message</div>
-                        <textarea name='comment' />
+                        <textarea 
+                            name='comment'
+                            autoCapitalize="none"
+                            type='text'
+                            placeholder='Message...'
+                            autoComplete='off'
+                            onChange={handleChanges}
+                            value={form.comment} />
                         <button type='submit'>Submit</button>
                     </form>
                     <span className='border-line'></span>
