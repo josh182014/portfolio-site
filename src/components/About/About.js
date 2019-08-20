@@ -5,7 +5,7 @@ const About = () => (
   <div className="about-container">
     <h1>About Me</h1>
     <img alt="headshot of Josh Timmons" src="/assets/headshot.png" />
-    <p className="about-paragraph">I am an extremely motivated Full Stack Software Developer seeking a career near Austin, TX. I am currently attending Lambda School's Full Stack Web Development course.</p>
+    <p className="about-paragraph">I am an extremely motivated Full Stack Software Developer seeking a career in the software field. I am currently attending Lambda School's Full Stack Web Development course.</p>
     <span className="divider" />
     <h2>Biography</h2>
     <p className="bio">After graduating from high school, Joshua attended Montana State University Billings taking general college courses. Shortly after, Joshua transferred to Franklin, TN to attend Dark Horse Institute in pursuit of his audio engineering certification. Upon completion, he traveled throughout major cities in the west, before settling back in Montana.</p>
