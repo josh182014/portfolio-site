@@ -91,13 +91,15 @@
         margin-bottom: 20px;
 
         button {
-            background-color: $whiteText;
-            color: black;
-            border-radius: 2%;
-            width: 50%;
-            height: 30px;
-            margin: 10px 25%;
+            color: $whiteText;
+            background-color: rgb(112, 127, 148);
+            border: 1px solid white;
             font-size: 14px;
+            width: 50%;
+            height: 32px;
+            margin: 10px 25%;
+            border-radius: 3px;
+            cursor: pointer;
         }
 
         input {
@@ -304,7 +306,7 @@
             }
 
             button {
-                color: white;
+                color: $whiteText;
                 background-color: rgb(112, 127, 148);
                 border: 1px solid white;
                 font-size: 15px;
