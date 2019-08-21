@@ -128,8 +128,8 @@
     margin: 0;
     position: fixed;
     top: 20%;
-    overflow: scroll;
-    overflow-y: scroll;
+    overflow: auto;
+    overflow-y: auto;
     justify-content: center;
     align-self: center;
     height: 320px;
@@ -160,7 +160,7 @@
         flex-grow: 3;
         justify-content: flex-start;
         position: relative;
-        overflow: scroll;
+        overflow: auto;
         flex: 1;
 
         a {
@@ -221,11 +221,11 @@
     margin: 0;
     position: fixed;
     top: 20%;
-    overflow: scroll;
+    overflow: auto;
     justify-content: center;
     align-self: center;
     transition: height 1s, top 1s, opacity 0.5s;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 3;
 
     @media #{$tablet} {
@@ -247,7 +247,7 @@
         border-radius: 10px;
         flex-wrap: wrap;
         flex-direction: row;
-        overflow-y: scroll;
+        overflow-y: auto;
         justify-content: center;
         p {
             margin: 0 50px;
