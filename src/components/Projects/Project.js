@@ -4,6 +4,8 @@ const Project = props => (
   <div key={props.project.name} className="projectContainer">
     <div className="projectTextContainer">
       <h3>{props.project.name}</h3>
+      <div className='techStack'><strong>Tech Used: </strong>{props.project.tech.map(each =>
+      <span><strong>{each} </strong></span>)} </div>
       <div className="projectDescription">{props.project.description}</div>
       <a rel="noopener noreferrer" target="_blank" href={props.project.github} className="projectDiv">
         <i className="fas fa-code" />
