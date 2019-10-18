@@ -43,10 +43,28 @@
                 a {
                     color: $whiteText;
                     text-decoration: none;
+
+                    span {
+                        align-self: center;
+
+                    }
                 }
         
                 i {
                     margin-right: 14px;
+                    font-size: 25px;
+                }
+
+                .resumeLink {
+                    display: flex;
+
+                    i {
+                        margin-right: 8px;
+                        margin-left: 20px;
+                    }
+                    span {
+                        text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
+                    }
                 }
                 
             }
