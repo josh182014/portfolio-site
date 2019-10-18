@@ -39,14 +39,29 @@
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: row;
+                align-items: center;
 
                 a {
                     color: $whiteText;
                     text-decoration: none;
+
+                    span {
+                        align-self: center;
+                    }
                 }
         
                 i {
                     margin-right: 14px;
+                    font-size: 25px;
+                }
+
+                .resumeLink {
+                    display: flex;
+
+                    i {
+                        margin-right: 8px;
+                        margin-left: 20px;
+                    }
                 }
                 
             }
