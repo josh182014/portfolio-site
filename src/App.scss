@@ -11,6 +11,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   color: $whiteText;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hidden {
