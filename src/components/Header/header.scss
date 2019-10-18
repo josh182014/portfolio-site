@@ -10,6 +10,7 @@
     div {
         width: 86%;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
         @media #{$tablet} {
@@ -17,14 +18,37 @@
             flex-direction: column;
         }
 
-        h2 {
+        .introText {
+            width: 75%;
             text-align: left;
             padding-left: 2%;
             text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
 
             @media #{$tablet} {
+                margin-top: 25px;
                 width: 90%;
                 padding: 0;
+            }
+
+            h2 {
+                margin-top: 0;
+            }
+
+            .socialIcons {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+                a {
+                    color: $whiteText;
+                    text-decoration: none;
+                }
+        
+                i {
+                    margin-right: 14px;
+                }
+                
             }
         }
 
