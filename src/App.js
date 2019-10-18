@@ -8,6 +8,7 @@ import SearchPage from './components/Search/SearchPage';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 function App() {
   const [state] = useState({
@@ -26,10 +27,13 @@ function App() {
           exact
           path="/"
           render={props => (
-            <Projects
-              {...props}
-              projects={state.projects}
-            />
+            <>
+              <Header />
+              <Projects
+                {...props}
+                projects={state.projects}
+              />
+            </>
           )}
         />
         <Route

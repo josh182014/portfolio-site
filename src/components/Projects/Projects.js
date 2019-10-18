@@ -7,6 +7,7 @@ const Projects = (props) => {
   if (props.projects) {
     return (
       <div className="projectsContainer">
+        <h2 className='featuredProjects'>Featured Projects</h2>
         {props.projects.map(project => (
           <Project key={project.name} project={project} />
         ))}

@@ -1,0 +1,40 @@
+@import '../../assets//master';
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $headerHeight + 60px;
+    justify-content: center;
+    width: 100%;
+
+    div {
+        width: 86%;
+        display: flex;
+        align-items: center;
+
+        @media #{$tablet} {
+            width: 90%;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: left;
+            padding-left: 2%;
+            text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
+
+            @media #{$tablet} {
+                width: 90%;
+                padding: 0;
+            }
+        }
+
+        .logo {
+            max-width: 130px;
+            max-height: 130px;
+            height: auto;
+            width: auto;
+            padding-right: 2%;
+
+        }
+    }
+}
