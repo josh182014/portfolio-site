@@ -5,8 +5,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: $headerHeight;
+    margin-top: 20px;
     padding-bottom: 20px;
+
+    .featuredProjects {
+        padding-top: 30px;
+        text-align: center;
+        margin-left: 7%;
+        text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
+    }
 
     .projectContainer {
         display: flex;
@@ -22,6 +29,10 @@
             flex-direction: row-reverse;
         }
 
+        &:nth-child(2) {
+            padding-top: 10px;
+        }
+
         .projectTextContainer {
             display: flex;
             flex-wrap: wrap;
@@ -32,6 +43,11 @@
             margin-right: 50px;
             margin-left: 4%;
             max-width: 700px;
+
+            @media #{$tablet} {
+                width: 80%;
+                margin: 0px;
+            }
 
             @media #{$mobile} {
                 width: 90%;
@@ -87,6 +103,11 @@
             margin-left: 50px;
             margin-right: 4%;
 
+            @media #{$tablet} {
+                width: 80%;
+                margin: 0px;
+            }
+
             @media #{$mobile} {
                 width: 90%;
                 margin: 0px;
@@ -128,6 +149,11 @@
             // margin: 20px;
             // margin-top: 45px;
             max-width: 300px;
+
+            @media #{$tablet} {
+                width: 50%;
+                margin: 50px 0 20px 0;
+            }
                 
             @media #{$mobile} {
                 width: 60%;
