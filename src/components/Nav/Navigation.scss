@@ -133,7 +133,7 @@
     justify-content: center;
     align-self: center;
     height: 320px;
-    max-height: 80%;
+    // max-height: 80%;
     flex-grow: 1;
     border-radius: 10px;
     // transition: opacity 1s;
@@ -199,7 +199,7 @@
     flex-wrap: wrap;
     width: 100%;
     height: calc(100% - 100px); 
-    height: 100%;
+    height: 100vh;
     margin: 0;
     position: fixed;
     overflow: hidden;
@@ -338,9 +338,9 @@
 }
 
 .contact-transition {
-    transition: height 1s, top 1s, opacity 0.5s;
-    top: 5px;
-    height: calc(100% - 10px);
+    // transition: height 1s, top 1s, opacity 0.5s;
+    top: 20%;
+    height: auto;
     opacity: 100%;
 }
 
@@ -358,7 +358,7 @@
 }
 
 .test-popup {
-    transition: height 1s, top 1s, opacity 0.5s ease-in 0.7s, visibility 0s 1.5s;
+    // transition: height 1s, top 1s, opacity 0.5s ease-in 0.7s, visibility 0s 1.5s;
     opacity: 0;
     visibility: hidden;
 }
