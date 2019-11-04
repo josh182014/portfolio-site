@@ -224,7 +224,7 @@
     overflow: auto;
     justify-content: center;
     align-self: center;
-    transition: height 1s, top 1s, opacity 0.5s;
+    // transition: height 1s, top 1s, opacity 0.5s;
     overflow-y: auto;
     z-index: 3;
 
@@ -339,8 +339,9 @@
 
 .contact-transition {
     // transition: height 1s, top 1s, opacity 0.5s;
-    top: 20%;
-    height: auto;
+    top: 5px;
+    height: 95vh;
+    max-height: 850px;
     opacity: 100%;
 }
 
