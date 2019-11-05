@@ -10,7 +10,7 @@
 
     .featuredProjects {
         width: 100%;
-        padding-top: 50px;
+        padding-top: 70px;
         text-align: center;
         text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
     }
@@ -24,6 +24,10 @@
         align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &:nth-child(3) {
+            padding-top: 10px;
+        }
 
         &:nth-child(2n) {
             flex-direction: row-reverse;
@@ -179,6 +183,7 @@
 }
 
 .skillsContainer {
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
