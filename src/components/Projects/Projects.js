@@ -7,11 +7,11 @@ const Projects = (props) => {
   if (props.projects) {
     return (
       <div className="projectsContainer">
+        <Skills />
         <h2 className='featuredProjects'>Featured Projects</h2>
         {props.projects.map(project => (
           <Project key={project.name} project={project} />
         ))}
-        <Skills />
       </div>
     );
   }

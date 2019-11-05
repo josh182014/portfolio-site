@@ -9,9 +9,9 @@
     padding-bottom: 20px;
 
     .featuredProjects {
-        padding-top: 30px;
+        width: 100%;
+        padding-top: 50px;
         text-align: center;
-        margin-left: 7%;
         text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
     }
 
@@ -184,15 +184,30 @@
     flex-direction: column;
     width: 100%;
 
+    h2 {
+        text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
+        text-align: center;
+    }
+
     ul {
         padding: 0;
-        width: 80%;
+        width: 100%;
         align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         li {
             list-style-type: none;
             border-bottom: 2px solid rgb(71, 71, 71);
-            padding: 20px;
+            padding: 24px 20px;
+            width: 25%;
+            text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.74);
+
+            @media #{$tablet} {
+                width: 22%;
+            }
+
         }
     }
 
