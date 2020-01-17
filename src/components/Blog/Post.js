@@ -2,7 +2,6 @@ import React from 'react';
 import "./post.scss";
 
 const Post = ({ post }) => {
-  console.log("postpost", post)
   return (
     <div className="post-wrapper">
       <h2 className="blog-title">{post.title}</h2>
