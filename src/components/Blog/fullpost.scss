@@ -1,0 +1,15 @@
+@import '../../assets/master';
+
+.fullpost-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 50px;
+    margin-top: $headerHeight;
+
+    .fullpost-blog-body {
+        font-size: 18px;
+        .fullpost-body-paragraph {
+            margin: 20px 0;
+        }
+    }
+}

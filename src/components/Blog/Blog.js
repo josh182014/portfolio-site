@@ -11,7 +11,6 @@ const Blog = (props) => {
           <Post post={post} />
         ))}
       </div>
-      />
     </>
   );
 }
