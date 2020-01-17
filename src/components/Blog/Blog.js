@@ -1,7 +1,5 @@
 import React from 'react';
-import { Route, withRouter } from 'react-router-dom';
 import Post from './Post';
-import PostPage from './PostPage';
 import posts from "./dummyPosts";
 import "./blog.scss";
 
