@@ -132,11 +132,8 @@ const Nav = (props) => {
             : (
               <>
                 <p>
-                    I'm currently looking for new opportunites. Please fill out this form and I will get back to you as fast as I can!
+                    Please fill out this form and I will get back to you as fast as I can!
                 </p>
-                <div className='resume'>
-                <a href="/assets/resume.pdf" download="josh-timmons-resume" target="_blank"><i className="far fa-file-alt fa-lg"></i><h4>Download Resume</h4></a>
-                </div>
                 <form name="contact" onSubmit={handleForm}>
                   <div>Name*</div>
                   <input

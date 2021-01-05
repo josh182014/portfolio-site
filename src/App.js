@@ -18,7 +18,7 @@ function App() {
   });
 
   useEffect(() => {
-    console.log("Hiring? I'm currently looking for new opportunites. Download my resume here https://joshtimmons.dev/assets/resume.pdf :)");
+    console.log("You're a curious one...");
   }, []);
 
   return (
