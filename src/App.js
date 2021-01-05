@@ -9,6 +9,8 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import Blog from './components/Blog/Blog';
+import PostPage from './components/Blog/PostPage';
 
 function App() {
   const [state] = useState({
@@ -16,7 +18,7 @@ function App() {
   });
 
   useEffect(() => {
-    console.log("Hiring? I'm currently looking for new opportunites. Download my resume here https://joshtimmons.dev/assets/resume.pdf :)");
+    console.log("You're a curious one...");
   }, []);
 
   return (
@@ -51,6 +53,23 @@ function App() {
             <Contact
               {...props}
               projects={state.projects}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/blog"
+          render={props => (
+            <Blog
+              {...props}
+            />
+          )}
+        />
+        <Route
+          path="/blog/:id"
+          render={props => (
+            <PostPage
+              {...props}
             />
           )}
         />
