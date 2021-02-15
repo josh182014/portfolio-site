@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Skills = (props) => {
-  const skills = ['JavaScript', 'React.js w/ Hooks', 'Node.js', 'Express.js', 'Python', 'Jest', 'Postgres', 'Git', 'Agile'];
+  const skills = ['JavaScript', 'React.js w/ Hooks', 'Data Visualization', 'Python', 'Node.js', 'Redux', 'Postgress', 'CSS & Preprocessors', 'Git'];
   return (
     <div className="skillsContainer">
       <h2>Top Skills</h2>
