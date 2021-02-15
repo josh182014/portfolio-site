@@ -5,7 +5,7 @@ const About = () => (
   <div className="about-container">
     <h1>About Me</h1>
     <img alt="headshot of Josh Timmons" src="/assets/headshot.png" />
-    <p className="about-paragraph">I am a Software Engineer and a music, tech, travel and coffee enthusiast. I completed Lambda School’s 9 month Full Stack Web Development course, during which time I spent 8 hours a day learning React, Node.js, Python, and much more.</p>
+    <p className="about-paragraph">I am a Software Engineer and a music, tech, travel and coffee enthusiast. I am currently working as a Frontend Engineer at Trend Micro. Previously a Team Lead at Lambda School, where I also completed their 9 month Full Stack Web Development course, during which time I spent 8 hours a day learning React, Node.js, Python, and much more.</p>
     <span className="divider" />
     <h2>Biography</h2>
     <p className="bio">After graduating from high school, Joshua attended Montana State University Billings taking general college courses. Shortly after, Joshua transferred to Franklin, TN to attend Dark Horse Institute in pursuit of his audio engineering certification. Upon completion, he traveled throughout major cities in the west, before settling back in Montana.</p>

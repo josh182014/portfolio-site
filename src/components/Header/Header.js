@@ -7,10 +7,10 @@ const Header = () => {
       <div>
         <img className='logo' alt="" src='/favicons/android-chrome-512x512.png'></img>
         <div className='introText'>
-          <h2>I'm Josh Timmons, a software engineer. Previously a Team Lead at Lambda School.</h2>
+          <h2>I'm Josh Timmons, a software engineer. Currently a Frontend Engineer at Trend Micro. Previously a Team Lead at Lambda School.</h2>
           <div className='socialIcons'>
-            <a target = '_blank' rel='noopener noreferrer' href='https://github.com/josh182014'><i class="fab fa-2x fa-github"></i></a>
-            <a target= '_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/josh-timmons-851216132/'><i class="fab fa-2x fa-linkedin"></i></a>
+            <a target = '_blank' rel='noopener noreferrer' href='https://github.com/josh182014'><i className="fab fa-2x fa-github"></i></a>
+            <a target= '_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/josh-timmons-851216132/'><i className="fab fa-2x fa-linkedin"></i></a>
           </div>
         </div>
       </div>
